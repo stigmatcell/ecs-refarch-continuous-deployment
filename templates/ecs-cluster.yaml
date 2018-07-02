@@ -163,6 +163,7 @@ Resources:
       ImageId: !FindInMap [ AWSRegionToAMI, !Ref "AWS::Region", AMI ]
       InstanceType: !Ref InstanceType
       IamInstanceProfile: !Ref InstanceProfile
+      KeyName : bastion-xl 
       SecurityGroups:
         - !Ref SecurityGroup
       UserData:
